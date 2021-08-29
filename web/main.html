@@ -15,6 +15,10 @@
         <br>
         <button id="search" class="bg-primary text-white border-primary rounded-pill">実行</button>
     </div>
+    <div>
+      <p class="mb-0">処理の進行状況出力欄</p>
+      <textarea id="result" cols="30" rows="20"></textarea>
+    </div>
 
     <script type="text/javascript" src="./eel.js"></script>
     <script>
@@ -27,6 +31,11 @@
                 eel.edit_date(date.value)
             }
         })
+
+        eel.expose(view_log_js)
+        function view_log_js(text){
+            result.value += text + '\n'
+        }
 
 
     </script>

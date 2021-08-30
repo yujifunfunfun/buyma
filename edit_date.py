@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 import eel
 import time
 from logger import *
+import csv
 
 logger = set_logger(__name__)
 
@@ -28,10 +29,18 @@ def login():
     # Webサイトを開く
     driver.get("https://www.buyma.com/login/")
     time.sleep(5)
+
+    # ID、パスワードの取得
+    csv_file = open("./id_pass.csv", "r", encoding="ms932")
+    f = csv.reader(csv_file, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
+    l = [row for row in f]
+    id = l[1][0]
+    passwd = l[1][1]
+
     # ログインメールアドレス入力
-    driver.find_element_by_id("txtLoginId").send_keys('tyuji051605160516@gmail.com')
+    driver.find_element_by_id("txtLoginId").send_keys(id)
     # パスワード入力
-    driver.find_element_by_id("txtLoginPass").send_keys('tozuka1998')
+    driver.find_element_by_id("txtLoginPass").send_keys(passwd)
     # ログインボタンクリック
     driver.find_element_by_id("login_do").click()
     logger.info('ログインしました')
@@ -44,9 +53,13 @@ def excute_action(date):
     logger.info('出品管理へ遷移しました')
     eel.view_log_js('出品管理へ遷移しました')
     time.sleep(3)
-    logger.info('処理が開始されました')
-    eel.view_log_js('処理が開始されました')
-    
+    # 表示件数の変更
+    driver.find_element_by_class_name("js-row-count-options").click()
+    driver.find_element_by_xpath('//*[@id="row-count-options"]/option[3]').click()
+    time.sleep(2)
+    logger.info('日付変更処理が開始されました')
+    eel.view_log_js('日付変更処理が開始されました')
+
     # 日付変更動作
     edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
     edit_tanka_buttons = driver.find_elements_by_class_name('_item_edit_tanka')

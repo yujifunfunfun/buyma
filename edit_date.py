@@ -30,7 +30,7 @@ def login():
     driver.get("https://www.buyma.com/login/")
     time.sleep(5)
 
-    # ID、パスワードの取得
+    # CSVからID、パスワードの取得
     csv_file = open("./id_pass.csv", "r", encoding="ms932")
     f = csv.reader(csv_file, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
     l = [row for row in f]
@@ -47,7 +47,7 @@ def login():
     eel.view_log_js('ログインしました')
     time.sleep(3)
 
-def excute_action(date):
+def edit_date(date):
     # 出品画面へ遷移
     driver.get("https://www.buyma.com/my/sell/?tab=b/")
     logger.info('出品管理へ遷移しました')
@@ -57,10 +57,9 @@ def excute_action(date):
     driver.find_element_by_class_name("js-row-count-options").click()
     driver.find_element_by_xpath('//*[@id="row-count-options"]/option[3]').click()
     time.sleep(2)
+    # 日付変更動作
     logger.info('日付変更処理が開始されました')
     eel.view_log_js('日付変更処理が開始されました')
-
-    # 日付変更動作
     edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
     edit_tanka_buttons = driver.find_elements_by_class_name('_item_edit_tanka')
     input_lists = driver.find_elements_by_class_name("_item_yukodate_edit")
@@ -85,7 +84,7 @@ def excute_action(date):
 def main(date):
     start_chrome()
     login()
-    excute_action(date)
+    edit_date(date)
         
         
 # 直接起動された場合はmain()を起動(モジュールとして呼び出された場合は起動しないようにするため)

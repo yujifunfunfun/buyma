@@ -5,6 +5,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import eel
 import time
+from logger import *
+
+logger = set_logger(__name__)
 
 
 def start_chrome():
@@ -31,32 +34,38 @@ def login():
     driver.find_element_by_id("txtLoginPass").send_keys('tozuka1998')
     # ログインボタンクリック
     driver.find_element_by_id("login_do").click()
+    logger.info('ログインしました')
     eel.view_log_js('ログインしました')
     time.sleep(3)
 
 def excute_action(date):
     # 出品画面へ遷移
     driver.get("https://www.buyma.com/my/sell/?tab=b/")
-    eel.view_log_js('出品管理へ遷移')
-    
+    logger.info('出品管理へ遷移しました')
+    eel.view_log_js('出品管理へ遷移しました')
     time.sleep(3)
-
+    logger.info('処理が開始されました')
     eel.view_log_js('処理が開始されました')
+    
     # 日付変更動作
-    edit_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
+    edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
+    edit_tanka_buttons = driver.find_elements_by_class_name('_item_edit_tanka')
     input_lists = driver.find_elements_by_class_name("_item_yukodate_edit")
-    edit_buttons_num = len(edit_buttons)
-    for count,(edit_button,input_list) in enumerate(zip(edit_buttons,input_lists),1):
+
+    edit_date_buttons_num = len(edit_date_buttons)
+    for count,(edit_date_button,edit_tanka_button,input_list) in enumerate(zip(edit_date_buttons,edit_tanka_buttons,input_lists),1):
         if count > 1:
-            driver.find_element_by_class_name('_item_edit_tanka').click()
-        edit_button.click()
-        time.sleep(2)
+            edit_tanka_button.click()
+        edit_date_button.click()
+        time.sleep(1)
         input_list.clear()
         time.sleep(1)
         input_list.send_keys(date)
         time.sleep(1)
-        eel.view_log_js(f"{count}/{edit_buttons_num}完了")
+        logger.info(f"{count}/{edit_date_buttons_num}完了")
+        eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
 
+    logger.info('処理が完了しました')
     eel.view_log_js("処理が完了しました")
 
 

@@ -6,8 +6,9 @@ from selenium.webdriver.chrome.options import Options
 import eel
 import time
 
-def main(date):
 
+def start_chrome():
+    global option
     option = Options()                         
     # option.add_argument('--headless') 
     # option.add_argument('--lang=ja-JP')
@@ -16,17 +17,14 @@ def main(date):
     # option.add_argument('--ignore-ssl-errors')
     # option.add_argument('--incognito') 
     option.add_argument("window-size=1500,1000")
-
-
-
     #ここで、バージョンなどのチェックをする
+    global driver
     driver = webdriver.Chrome(ChromeDriverManager().install(),options=option)   
 
-
+def login():
     # Webサイトを開く
     driver.get("https://www.buyma.com/login/")
     time.sleep(5)
-
     # ログインメールアドレス入力
     driver.find_element_by_id("txtLoginId").send_keys('tyuji051605160516@gmail.com')
     # パスワード入力
@@ -35,6 +33,8 @@ def main(date):
     driver.find_element_by_id("login_do").click()
     eel.view_log_js('ログインしました')
     time.sleep(3)
+
+def excute_action(date):
     # 出品画面へ遷移
     driver.get("https://www.buyma.com/my/sell/?tab=b/")
     eel.view_log_js('出品管理へ遷移')
@@ -58,7 +58,12 @@ def main(date):
         eel.view_log_js(f"{count}/{edit_buttons_num}完了")
 
     eel.view_log_js("処理が完了しました")
-    
+
+
+def main(date):
+    start_chrome()
+    login()
+    excute_action(date)
         
         
 # 直接起動された場合はmain()を起動(モジュールとして呼び出された場合は起動しないようにするため)

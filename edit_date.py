@@ -9,12 +9,14 @@ import time
 def main(date):
 
     option = Options()                         
-    option.add_argument('--headless') 
-    option.add_argument('--lang=ja-JP')
-    option.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')
-    option.add_argument('--ignore-certificate-errors')
-    option.add_argument('--ignore-ssl-errors')
-    option.add_argument('--incognito') 
+    # option.add_argument('--headless') 
+    # option.add_argument('--lang=ja-JP')
+    # option.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')
+    # option.add_argument('--ignore-certificate-errors')
+    # option.add_argument('--ignore-ssl-errors')
+    # option.add_argument('--incognito') 
+    option.add_argument("window-size=1500,1000")
+
 
 
     #ここで、バージョンなどのチェックをする
@@ -32,7 +34,7 @@ def main(date):
     # ログインボタンクリック
     driver.find_element_by_id("login_do").click()
     eel.view_log_js('ログインしました')
-    time.sleep(5)
+    time.sleep(3)
     # 出品画面へ遷移
     driver.get("https://www.buyma.com/my/sell/?tab=b/")
     eel.view_log_js('出品管理へ遷移')
@@ -45,6 +47,8 @@ def main(date):
     input_lists = driver.find_elements_by_class_name("_item_yukodate_edit")
     edit_buttons_num = len(edit_buttons)
     for count,(edit_button,input_list) in enumerate(zip(edit_buttons,input_lists),1):
+        if count > 1:
+            driver.find_element_by_class_name('_item_edit_tanka').click()
         edit_button.click()
         time.sleep(2)
         input_list.clear()

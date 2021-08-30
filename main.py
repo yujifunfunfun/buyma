@@ -7,4 +7,4 @@ def edit_date(date):
     main(date)
 
 eel.init("web")
-eel.start("main.html")
+eel.start("main.html",size=(600, 800))

@@ -75,9 +75,10 @@ def edit_date(date):
             edit_date_button.click()
             time.sleep(1)
             input_list.clear()
-            time.sleep(1)
             input_list.send_keys(date)
             time.sleep(1)
+            # input_list.click()
+            # time.sleep(1)
             logger.info(f"{count}/{edit_date_buttons_num}完了")
             eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
         
@@ -100,6 +101,8 @@ def edit_date(date):
                 input_list.clear()
                 input_list.send_keys(date)
                 time.sleep(1)
+                # input_list.click()
+                # time.sleep(1)
                 logger.info(f"{count}/{edit_date_buttons_num}完了")
                 eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
 

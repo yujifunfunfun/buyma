@@ -2,4 +2,3 @@ selenium
 webdriver_manager
 eel
 pyinstaller
-dist

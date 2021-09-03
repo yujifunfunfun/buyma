@@ -61,7 +61,7 @@ def edit_date(input_month,input_day):
         p = r'-(.*)-'
         this_month = re.search(p, date).group(1)
         this_month = this_month.strip('0')
-        month = int(input_month) - int(this_month)
+        month = input_month - this_month
 
         # 出品画面へ遷移
         driver.get("https://www.buyma.com/my/sell/?tab=b/")
@@ -76,13 +76,20 @@ def edit_date(input_month,input_day):
         logger.info('日付変更処理が開始されました')
         eel.view_log_js('日付変更処理が開始されました')
         edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
-        edit_date_buttons_num = len(edit_date_buttons)
+        checkbox = driver.find_elements_by_class_name('js-checkbox-one-item')
+        input_lists = driver.find_elements_by_class_name("_item_yukodate_edit")
+        edit_tanka_buttons = driver.find_elements_by_class_name('_item_edit_tanka')
 
-        for count,(edit_date_button) in enumerate(zip(edit_date_buttons),1):
+
+        edit_date_buttons_num = len(edit_date_buttons)
+        for count,(edit_date_button,check,input_list) in enumerate(zip(edit_date_buttons,checkbox,input_lists),1):
+            # 納品時はいらない
+            # if count > 1:
+            #     edit_tanka_button.click()
             edit_date_button.click()
             time.sleep(1)
             for i in range(0,int(month)):
-                driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
+                driver.find_element_by_xpath("//a[@title='次']").click()
                 time.sleep(1)
             
             driver.find_element_by_xpath(f'//a[text()={input_day}]').click()
@@ -96,15 +103,20 @@ def edit_date(input_month,input_day):
             eel.view_log_js("次のページに遷移しました")
 
             edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
-            edit_date_buttons_num = len(edit_date_buttons)
+            edit_tanka_buttons = driver.find_elements_by_class_name('_item_edit_tanka')
+            input_lists = driver.find_elements_by_class_name("_item_yukodate_edit")
 
-            for count,(edit_date_button) in enumerate(zip(edit_date_buttons),1):
+            edit_date_buttons_num = len(edit_date_buttons)
+            for count,(edit_date_button,edit_tanka_button,input_list) in enumerate(zip(edit_date_buttons,edit_tanka_buttons,input_lists),1):
+                # if count > 1:
+                #     edit_tanka_button.click()
                 edit_date_button.click()
-                for i in range(0,int(month)):
-                    driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
-                    time.sleep(1)
-                
-                driver.find_element_by_xpath(f'//a[text()={input_day}]').click()
+                time.sleep(1)
+                input_list.clear()
+                input_list.send_keys(date)
+                time.sleep(1)
+                edit_tanka_button.send_keys(Keys.ENTER)
+                time.sleep(1)
                 logger.info(f"{count}/{edit_date_buttons_num}完了")
                 eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
 
@@ -118,7 +130,7 @@ def edit_date(input_month,input_day):
 
 
 
-def main(input_month,input_day):
+def main2(input_month,input_day):
     start_chrome()
     login()
     edit_date(input_month,input_day)
@@ -126,4 +138,4 @@ def main(input_month,input_day):
         
 # 直接起動された場合はmain()を起動(モジュールとして呼び出された場合は起動しないようにするため)
 if __name__ == "__main__":
-    main()
+    main2()

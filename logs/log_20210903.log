@@ -178,3 +178,49 @@ Message: unexpected alert open: {Alert text : 編集不可な商品のため更�
 2021-09-03 10:17:58,024 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
   (Session info: chrome=92.0.4515.159)
 
+2021-09-03 12:18:33,721 - INFO - edit_date.py - edit_date - login - Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 12:18:43,890 - INFO - edit_date.py - edit_date - edit_date - HTTPConnectionPool(host='127.0.0.1', port=53902): Max retries exceeded with url: /session/4988013b7da6861105940f480d799562/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029B47841EE0>: Failed to establish a new connection: [WinError 10061] 対象のコンピューターによって拒否されたため、接続できませんでした。'))
+2021-09-03 12:26:35,358 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 12:26:38,365 - INFO - edit_date.py - edit_date - edit_date - unsupported operand type(s) for -: 'str' and 'str'
+2021-09-03 12:30:17,148 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 12:30:20,158 - INFO - edit_date.py - edit_date - edit_date - unsupported operand type(s) for -: 'str' and 'int'
+2021-09-03 12:31:08,506 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 12:31:15,736 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 12:31:23,315 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 12:31:25,815 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 12:31:25,827 - INFO - edit_date.py - edit_date - edit_date - Alert Text: 編集不可な商品のため更新できません。
+
+Message: unexpected alert open: {Alert text : 編集不可な商品のため更新できません。
+}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 12:34:10,426 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 12:34:15,821 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 12:34:23,278 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 12:34:24,623 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='次']"}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 12:36:06,893 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 12:36:10,584 - INFO - edit_date.py - edit_date - edit_date - Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 12:36:55,985 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 12:37:01,048 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 12:37:08,074 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 12:37:09,453 - INFO - edit_date.py - edit_date - edit_date - Message: invalid selector: Unable to locate an element with the xpath expression //a[text()'次>'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[text()'次>']' is not a valid XPath expression.
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 12:41:05,154 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 12:41:10,463 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 12:41:17,567 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 12:41:21,217 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 12:41:21,227 - INFO - edit_date.py - edit_date - edit_date - Alert Text: 編集不可な商品のため更新できません。
+
+Message: unexpected alert open: {Alert text : 編集不可な商品のため更新できません。
+}
+  (Session info: chrome=92.0.4515.159)
+

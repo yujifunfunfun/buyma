@@ -264,3 +264,23 @@ Message: unexpected alert open: {Alert text : 編集不可な商品のため更�
 }
   (Session info: chrome=92.0.4515.159)
 
+2021-09-03 14:47:35,368 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 14:47:42,371 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 14:47:52,353 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 14:47:56,771 - INFO - edit_date.py - edit_date - edit_date - 1/2完了
+2021-09-03 14:47:56,808 - INFO - edit_date.py - edit_date - edit_date - Alert Text: 編集不可な商品のため更新できません。
+
+Message: unexpected alert open: {Alert text : 編集不可な商品のため更新できません。
+}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 14:48:59,768 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 14:49:06,550 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 14:49:13,768 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 14:49:17,119 - INFO - edit_date.py - edit_date - edit_date - 1/2完了
+2021-09-03 14:49:17,127 - INFO - edit_date.py - edit_date - edit_date - Alert Text: 編集不可な商品のため更新できません。
+
+Message: unexpected alert open: {Alert text : 編集不可な商品のため更新できません。
+}
+  (Session info: chrome=92.0.4515.159)
+

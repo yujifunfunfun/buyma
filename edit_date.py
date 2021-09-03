@@ -90,7 +90,7 @@ def edit_date(input_month,input_day):
                 driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
                 time.sleep(1)
             
-            driver.find_element_by_xpath(f'//a[text()={input_day}]').click()
+            driver.find_element_by_xpath(f'//a[contains(@href,"#") and text()={input_day}]').click()
             time.sleep(1)
             logger.info(f"{count}/{edit_date_buttons_num}完了")
             eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")

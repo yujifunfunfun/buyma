@@ -1,0 +1,180 @@
+2021-09-03 08:47:07,265 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 08:47:13,364 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 08:47:21,133 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 08:47:24,762 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 08:47:28,385 - INFO - edit_date.py - edit_date - edit_date - 2/21完了
+2021-09-03 08:47:32,263 - INFO - edit_date.py - edit_date - edit_date - 3/21完了
+2021-09-03 08:47:36,127 - INFO - edit_date.py - edit_date - edit_date - 4/21完了
+2021-09-03 08:47:39,889 - INFO - edit_date.py - edit_date - edit_date - 5/21完了
+2021-09-03 08:47:42,588 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 08:48:15,877 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 08:48:22,602 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 08:48:29,955 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 08:48:33,589 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 08:48:37,203 - INFO - edit_date.py - edit_date - edit_date - 2/21完了
+2021-09-03 08:48:40,866 - INFO - edit_date.py - edit_date - edit_date - 3/21完了
+2021-09-03 08:48:44,516 - INFO - edit_date.py - edit_date - edit_date - 4/21完了
+2021-09-03 08:48:48,205 - INFO - edit_date.py - edit_date - edit_date - 5/21完了
+2021-09-03 08:48:52,067 - INFO - edit_date.py - edit_date - edit_date - 6/21完了
+2021-09-03 08:48:52,075 - INFO - edit_date.py - edit_date - edit_date - Alert Text: 編集不可な商品のため更新できません。
+
+Message: unexpected alert open: {Alert text : 編集不可な商品のため更新できません。
+}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 08:51:52,011 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 08:51:58,213 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 08:52:05,899 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 08:52:09,457 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 08:52:10,716 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 08:54:36,099 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 08:54:42,397 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 08:54:49,796 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 08:54:53,455 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 08:54:54,668 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 08:57:31,463 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 08:57:36,983 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 08:57:44,817 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 08:57:48,484 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 08:57:49,714 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:04:25,499 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:04:30,599 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:04:37,843 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:04:41,497 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:04:42,697 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:06:40,255 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:06:46,404 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:06:54,102 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:06:57,775 - INFO - edit_date.py - edit_date - edit_date - Message: element click intercepted: Element <input class="_item_yukodate_edit hasDatepicker" type="text" value="2021/09/02" style="" size="10" id="dp1630627610528"> is not clickable at point (1208, 736). Other element would receive the click: <a class="ui-state-default" href="#">...</a>
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:08:34,022 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:08:39,810 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:08:47,423 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:08:51,077 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:08:52,326 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:11:56,503 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:12:02,551 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:12:09,939 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:12:12,467 - INFO - edit_date.py - edit_date - edit_date - 'list' object has no attribute 'send_keys'
+2021-09-03 09:13:00,032 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:13:05,791 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:13:12,995 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:13:15,656 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:17:24,953 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:17:31,128 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:17:38,627 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:17:42,289 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:17:43,490 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:19:55,686 - INFO - edit_date.py - edit_date - login - Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:20:07,521 - INFO - edit_date.py - edit_date - edit_date - e
+2021-09-03 09:20:38,247 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:20:45,146 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:20:52,693 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:20:56,402 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:20:57,609 - INFO - edit_date.py - edit_date - edit_date - e
+2021-09-03 09:22:59,030 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:23:05,790 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:23:13,525 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:23:17,169 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:29:24,114 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:29:29,369 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:29:36,774 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:29:40,559 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:29:41,715 - INFO - edit_date.py - edit_date - edit_date - Message: element click intercepted: Element <a href="javascript:;" class="_item_edit_yukodate" data-syo-id="73447323" data-syo-updnumber="1" data-vt="/vt/my/buyeritems/edit/date/73447323">...</a> is not clickable at point (1168, 253). Other element would receive the click: <a class="ui-state-default" href="#">...</a>
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:31:45,341 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:31:50,643 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:31:57,734 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:32:01,336 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:32:02,590 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:34:32,105 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:34:36,902 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:34:43,638 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:34:47,379 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:34:48,553 - INFO - edit_date.py - edit_date - edit_date - Message: element click intercepted: Element <a href="javascript:;" class="_item_edit_yukodate" data-syo-id="73447323" data-syo-updnumber="1" data-vt="/vt/my/buyeritems/edit/date/73447323">...</a> is not clickable at point (1168, 858). Other element would receive the click: <div class="ui-widget-overlay" style="width: 1467px; height: 3364px; z-index: 10001;"></div>
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:39:28,123 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:39:33,492 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:39:40,587 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:39:42,012 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:40:29,370 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:40:34,669 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:40:42,222 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:40:45,862 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:40:47,088 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:42:41,447 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:42:47,221 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:42:55,069 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:42:58,815 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:42:59,954 - INFO - edit_date.py - edit_date - edit_date - Message: element click intercepted: Element <a href="javascript:;" class="_item_edit_yukodate" data-syo-id="73447323" data-syo-updnumber="1" data-vt="/vt/my/buyeritems/edit/date/73447323">...</a> is not clickable at point (1168, 659). Other element would receive the click: <a class="ui-state-default" href="#">...</a>
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:48:28,077 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:48:33,326 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:48:40,708 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:48:44,365 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:48:45,636 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 09:54:58,766 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 09:55:04,508 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 09:55:11,560 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 09:55:15,319 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 09:55:16,423 - INFO - edit_date.py - edit_date - edit_date - Message: element click intercepted: Element <a href="javascript:;" class="_item_edit_yukodate" data-syo-id="73447323" data-syo-updnumber="1" data-vt="/vt/my/buyeritems/edit/date/73447323">...</a> is not clickable at point (1280, 543). Other element would receive the click: <a class="ui-state-default" href="#">...</a>
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 10:03:16,854 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 10:03:23,132 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 10:03:30,358 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 10:03:34,233 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 10:03:35,451 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 10:10:21,030 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 10:10:26,592 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 10:10:34,435 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 10:10:38,458 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 10:10:39,684 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 10:11:31,068 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 10:11:37,483 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 10:11:44,614 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 10:11:48,551 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 10:11:49,778 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 10:17:40,078 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 10:17:45,130 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 10:17:52,189 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 10:17:56,815 - INFO - edit_date.py - edit_date - edit_date - 1/21完了
+2021-09-03 10:17:58,024 - INFO - edit_date.py - edit_date - edit_date - Message: element not interactable
+  (Session info: chrome=92.0.4515.159)
+

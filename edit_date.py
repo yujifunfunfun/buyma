@@ -15,10 +15,10 @@ def start_chrome():
     option = Options()                         
     # option.add_argument('--headless') 
     option.add_argument('--lang=ja-JP')
-    option.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')
-    option.add_argument('--ignore-certificate-errors')
-    option.add_argument('--ignore-ssl-errors')
-    option.add_argument('--incognito') 
+    # option.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36')
+    # option.add_argument('--ignore-certificate-errors')
+    # option.add_argument('--ignore-ssl-errors')
+    # option.add_argument('--incognito') 
     option.add_argument("window-size=1500,1000")
     #ここで、バージョンなどのチェックをする
     global driver
@@ -37,7 +37,6 @@ def login():
         l = [row for row in f]
         id = l[1][0]
         passwd = l[1][1]
-        eel.view_log_js(id)
 
         # ログインメールアドレス入力
         driver.find_element_by_id("txtLoginId").send_keys(id)
@@ -70,18 +69,23 @@ def edit_date(date):
         edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
         checkbox = driver.find_elements_by_class_name('js-checkbox-one-item')
         input_lists = driver.find_elements_by_class_name("_item_yukodate_edit")
+        edit_tanka_buttons = driver.find_elements_by_class_name('_item_edit_tanka')
+
 
         edit_date_buttons_num = len(edit_date_buttons)
-        for count,(edit_date_button,edit_tanka_button,input_list) in enumerate(zip(edit_date_buttons,checkbox,input_lists),1):
-            if count > 1:
-                edit_tanka_button.click()
+        for count,(edit_date_button,check,input_list) in enumerate(zip(edit_date_buttons,checkbox,input_lists),1):
+            # 納品時はいらない
+            # if count > 1:
+            #     edit_tanka_button.click()
             edit_date_button.click()
             time.sleep(1)
             input_list.clear()
             input_list.send_keys(date)
+            time.sleep(2)
+            input_list.send_keys(Keys.ENTER)
+
+
             time.sleep(1)
-            # input_list.click()
-            # time.sleep(1)
             logger.info(f"{count}/{edit_date_buttons_num}完了")
             eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
 
@@ -97,15 +101,15 @@ def edit_date(date):
 
             edit_date_buttons_num = len(edit_date_buttons)
             for count,(edit_date_button,edit_tanka_button,input_list) in enumerate(zip(edit_date_buttons,edit_tanka_buttons,input_lists),1):
-                if count > 1:
-                    edit_tanka_button.click()
+                # if count > 1:
+                #     edit_tanka_button.click()
                 edit_date_button.click()
                 time.sleep(1)
                 input_list.clear()
                 input_list.send_keys(date)
                 time.sleep(1)
-                # input_list.click()
-                # time.sleep(1)
+                edit_tanka_button.send_keys(Keys.ENTER)
+                time.sleep(1)
                 logger.info(f"{count}/{edit_date_buttons_num}完了")
                 eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
 
@@ -115,7 +119,7 @@ def edit_date(date):
     except Exception as e:
         logger.info(e)
         eel.view_log_js('エラーが発生しました')
-        driver.quit()
+        # driver.quit()
 
 
 

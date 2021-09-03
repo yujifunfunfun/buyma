@@ -290,3 +290,155 @@ Message: unexpected alert open: {Alert text : 編集不可な商品のため更�
 2021-09-03 15:26:07,531 - INFO - edit_date.py - edit_date - operate_calendar - 1/2完了
 2021-09-03 15:26:10,848 - INFO - edit_date.py - edit_date - operate_calendar - 2/2完了
 2021-09-03 15:26:10,880 - INFO - edit_date.py - edit_date - edit_date - 処理が完了しました
+2021-09-03 17:11:57,237 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:12:15,657 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 17:12:23,308 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 17:12:26,781 - INFO - edit_date.py - edit_date - operate_calendar - 1/5完了
+2021-09-03 17:12:30,336 - INFO - edit_date.py - edit_date - operate_calendar - 2/5完了
+2021-09-03 17:12:33,939 - INFO - edit_date.py - edit_date - operate_calendar - 3/5完了
+2021-09-03 17:12:37,627 - INFO - edit_date.py - edit_date - operate_calendar - 4/5完了
+2021-09-03 17:12:41,219 - INFO - edit_date.py - edit_date - operate_calendar - 5/5完了
+2021-09-03 17:12:41,270 - INFO - edit_date.py - edit_date - edit_date - 処理が完了しました
+2021-09-03 17:28:23,529 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:28:32,351 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 17:28:35,411 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"css selector","selector":".js-row-count-options"}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 17:31:06,601 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:31:23,929 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 17:31:36,298 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 17:31:39,883 - INFO - edit_date.py - edit_date - operate_calendar - 1/5完了
+2021-09-03 17:31:43,458 - INFO - edit_date.py - edit_date - operate_calendar - 2/5完了
+2021-09-03 17:31:44,662 - INFO - edit_date.py - edit_date - edit_date - Message: element click intercepted: Element <a href="javascript:;" class="_item_edit_yukodate" data-syo-id="73509296" data-syo-updnumber="4" data-vt="/vt/my/buyeritems/edit/date/73509296">...</a> is not clickable at point (1198, 858). Other element would receive the click: <div class="_overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:1200; background-color:rgba(200,200,200,0.3);"></div>
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 17:40:05,584 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:40:16,406 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 17:41:03,623 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:41:23,769 - INFO - edit_date.py - edit_date - edit_date - Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 17:43:04,256 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:43:14,302 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 17:43:17,353 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"css selector","selector":".js-row-count-options"}
+  (Session info: headless chrome=92.0.4515.159)
+
+2021-09-03 17:44:46,583 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:44:57,854 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 17:45:05,345 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 17:45:08,891 - INFO - edit_date.py - edit_date - operate_calendar - 1/5完了
+2021-09-03 17:45:12,707 - INFO - edit_date.py - edit_date - operate_calendar - 2/5完了
+2021-09-03 17:45:16,220 - INFO - edit_date.py - edit_date - operate_calendar - 3/5完了
+2021-09-03 17:45:58,447 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 17:46:08,896 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 17:46:11,935 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"css selector","selector":".js-row-count-options"}
+  (Session info: headless chrome=92.0.4515.159)
+
+2021-09-03 18:18:48,710 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:19:01,297 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:19:08,375 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:19:09,602 - INFO - edit_date.py - edit_date - edit_date - 'list' object has no attribute 'text'
+2021-09-03 18:20:11,360 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:20:22,070 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:20:29,781 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:20:31,099 - INFO - edit_date.py - edit_date - edit_date - 'str' object is not callable
+2021-09-03 18:26:16,078 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:26:26,443 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:26:33,367 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:26:34,661 - INFO - edit_date.py - edit_date - edit_date - 'str' object is not callable
+2021-09-03 18:29:43,884 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:29:56,136 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:30:03,261 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:30:04,546 - INFO - edit_date.py - edit_date - edit_date - 'str' object is not callable
+2021-09-03 18:32:11,775 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:32:22,564 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:32:29,557 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:32:30,845 - INFO - edit_date.py - edit_date - edit_date - 'str' object is not callable
+2021-09-03 18:36:10,920 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:36:21,687 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:36:28,705 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:36:30,082 - INFO - edit_date.py - edit_date - edit_date - 'str' object is not callable
+2021-09-03 18:37:33,779 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:37:43,913 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:37:51,915 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:37:53,191 - INFO - edit_date.py - edit_date - edit_date - 'str' object is not callable
+2021-09-03 18:40:32,290 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:40:44,202 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:40:51,324 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:40:56,026 - INFO - edit_date.py - edit_date - edit_date - 1/5完了
+2021-09-03 18:40:59,484 - INFO - edit_date.py - edit_date - edit_date - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 18:43:03,603 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:43:14,132 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:43:21,701 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:43:23,003 - INFO - edit_date.py - edit_date - edit_date - 'str' object is not callable
+2021-09-03 18:46:28,664 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:46:42,715 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:46:50,234 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:46:53,788 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href,"#") and text()=3]"}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 18:49:04,345 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:49:15,720 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:49:22,547 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:49:27,279 - INFO - edit_date.py - edit_date - edit_date - 1/5完了
+2021-09-03 18:49:43,160 - INFO - edit_date.py - edit_date - edit_date - Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 18:50:36,410 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:50:49,122 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:50:56,214 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:50:57,456 - INFO - edit_date.py - edit_date - edit_date - 'NoneType' object has no attribute 'group'
+2021-09-03 18:53:54,438 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 18:54:06,620 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 18:54:14,313 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 18:54:19,053 - INFO - edit_date.py - edit_date - edit_date - 1/5完了
+2021-09-03 18:54:34,925 - INFO - edit_date.py - edit_date - edit_date - Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 18:59:51,353 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 19:00:02,030 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 19:00:09,429 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 19:00:10,727 - INFO - edit_date.py - edit_date - edit_date - 'NoneType' object has no attribute 'group'
+2021-09-03 19:04:35,323 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 19:04:45,910 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 19:04:53,387 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 19:04:57,268 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href,"#") and text()=2]"}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 19:06:48,488 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 19:07:05,844 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 19:07:08,902 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"css selector","selector":".js-row-count-options"}
+  (Session info: chrome=92.0.4515.159)
+
+2021-09-03 19:07:44,580 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 19:07:57,811 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 19:08:04,435 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 19:08:08,041 - INFO - edit_date.py - edit_date - edit_date - 1/5完了
+2021-09-03 19:08:10,418 - INFO - edit_date.py - edit_date - edit_date - 2/5完了
+2021-09-03 19:08:14,164 - INFO - edit_date.py - edit_date - edit_date - 3/5完了
+2021-09-03 19:08:18,019 - INFO - edit_date.py - edit_date - edit_date - 4/5完了
+2021-09-03 19:08:22,588 - INFO - edit_date.py - edit_date - edit_date - 5/5完了
+2021-09-03 19:08:22,666 - INFO - edit_date.py - edit_date - edit_date - 処理が完了しました
+2021-09-03 19:13:30,595 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 19:13:40,784 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 19:13:43,834 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"css selector","selector":".js-row-count-options"}
+  (Session info: headless chrome=92.0.4515.159)
+
+2021-09-03 19:14:21,725 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 19:14:32,061 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 19:14:35,121 - INFO - edit_date.py - edit_date - edit_date - Message: no such element: Unable to locate element: {"method":"css selector","selector":".js-row-count-options"}
+  (Session info: headless chrome=92.0.4515.159)
+
+2021-09-03 19:19:47,673 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 19:19:58,637 - INFO - edit_date.py - edit_date - edit_date - リクエスト受付中ページへ遷移しました
+2021-09-03 19:20:05,787 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 19:20:09,341 - INFO - edit_date.py - edit_date - operate_calender - 1/5完了
+2021-09-03 19:20:12,913 - INFO - edit_date.py - edit_date - operate_calender - 2/5完了
+2021-09-03 19:20:16,617 - INFO - edit_date.py - edit_date - operate_calender - 3/5完了
+2021-09-03 19:20:17,766 - INFO - edit_date.py - edit_date - edit_date - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=92.0.4515.159)
+

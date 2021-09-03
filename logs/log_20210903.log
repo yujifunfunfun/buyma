@@ -253,3 +253,14 @@ Message: unexpected alert open: {Alert text : 編集不可な商品のため更�
 2021-09-03 13:57:08,059 - INFO - edit_date.py - edit_date - edit_date - 1/2完了
 2021-09-03 13:57:16,456 - INFO - edit_date.py - edit_date - edit_date - 2/2完了
 2021-09-03 13:57:16,477 - INFO - edit_date.py - edit_date - edit_date - 処理が完了しました
+2021-09-03 14:24:05,564 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 14:24:12,169 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 14:24:19,257 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 14:24:22,582 - INFO - edit_date.py - edit_date - edit_date - 1/2完了
+2021-09-03 14:24:25,934 - INFO - edit_date.py - edit_date - edit_date - 2/2完了
+2021-09-03 14:24:25,939 - INFO - edit_date.py - edit_date - edit_date - Alert Text: 編集不可な商品のため更新できません。
+
+Message: unexpected alert open: {Alert text : 編集不可な商品のため更新できません。
+}
+  (Session info: chrome=92.0.4515.159)
+

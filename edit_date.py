@@ -54,15 +54,20 @@ def login():
         eel.view_log_js('エラーが発生しました')
         driver.quit()
 
+def cal_click_count(input_month):
+
+    date = str(datetime.date.today())
+    p = r'-(.*)-'
+    this_month = re.search(p, date).group(1)
+    this_month = this_month.lstrip('0')
+    click_count = int(input_month) - int(this_month)
+    return click_count
+
+
 def edit_date(input_month,input_day):
     try:
-        # 今日の月を取得
-        date = str(datetime.date.today())
-        p = r'-(.*)-'
-        this_month = re.search(p, date).group(1)
-        this_month = this_month.strip('0')
-        month = int(input_month) - int(this_month)
-
+        # カレンダーの「次」ボタンを押す回数を計算
+        click_count = cal_click_count(input_month)
         # 出品画面へ遷移
         driver.get("https://www.buyma.com/my/sell/?tab=b/")
         logger.info('出品管理へ遷移しました')
@@ -81,7 +86,7 @@ def edit_date(input_month,input_day):
         for count,edit_date_button in enumerate(edit_date_buttons,1):
             edit_date_button.click()
             time.sleep(1)
-            for i in range(0,int(month)):
+            for i in range(0,int(click_count)):
                 driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
                 time.sleep(1)
             
@@ -100,7 +105,7 @@ def edit_date(input_month,input_day):
 
             for count,edit_date_button in enumerate(edit_date_buttons,1):
                 edit_date_button.click()
-                for i in range(0,int(month)):
+                for i in range(0,int(click_count)):
                     driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
                     time.sleep(1)
                 

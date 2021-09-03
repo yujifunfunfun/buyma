@@ -60,7 +60,7 @@ def edit_date(input_month,input_day):
         date = str(datetime.date.today())
         p = r'-(.*)-'
         this_month = re.search(p, date).group(1)
-        this_month = this_month.strip('0')
+        this_month = this_month.lstrip('0')
         month = input_month - this_month
 
         # 出品画面へ遷移

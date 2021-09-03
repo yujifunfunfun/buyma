@@ -78,7 +78,7 @@ def edit_date(input_month,input_day):
         edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
         edit_date_buttons_num = len(edit_date_buttons)
 
-        for count,(edit_date_button) in enumerate(zip(edit_date_buttons),1):
+        for count,edit_date_button in enumerate(edit_date_buttons,1):
             edit_date_button.click()
             time.sleep(1)
             for i in range(0,int(month)):
@@ -98,13 +98,15 @@ def edit_date(input_month,input_day):
             edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
             edit_date_buttons_num = len(edit_date_buttons)
 
-            for count,(edit_date_button) in enumerate(zip(edit_date_buttons),1):
+            for count,edit_date_button in enumerate(edit_date_buttons,1):
                 edit_date_button.click()
                 for i in range(0,int(month)):
                     driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
                     time.sleep(1)
                 
                 driver.find_element_by_xpath(f'//a[text()={input_day}]').click()
+                time.sleep(1)
+
                 logger.info(f"{count}/{edit_date_buttons_num}完了")
                 eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
 

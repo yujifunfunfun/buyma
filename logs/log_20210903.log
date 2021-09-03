@@ -284,3 +284,9 @@ Message: unexpected alert open: {Alert text : 編集不可な商品のため更�
 }
   (Session info: chrome=92.0.4515.159)
 
+2021-09-03 15:25:51,773 - INFO - edit_date.py - edit_date - login - ログインしました
+2021-09-03 15:25:57,742 - INFO - edit_date.py - edit_date - edit_date - 出品管理へ遷移しました
+2021-09-03 15:26:04,166 - INFO - edit_date.py - edit_date - edit_date - 日付変更処理が開始されました
+2021-09-03 15:26:07,531 - INFO - edit_date.py - edit_date - operate_calendar - 1/2完了
+2021-09-03 15:26:10,848 - INFO - edit_date.py - edit_date - operate_calendar - 2/2完了
+2021-09-03 15:26:10,880 - INFO - edit_date.py - edit_date - edit_date - 処理が完了しました

@@ -55,13 +55,27 @@ def login():
         driver.quit()
 
 def cal_click_count(input_month):
-
     date = str(datetime.date.today())
     p = r'-(.*)-'
     this_month = re.search(p, date).group(1)
     this_month = this_month.lstrip('0')
     click_count = int(input_month) - int(this_month)
     return click_count
+
+def operate_calendar(click_count,input_day):
+    edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
+    edit_date_buttons_num = len(edit_date_buttons)
+    for count,edit_date_button in enumerate(edit_date_buttons,1):
+        edit_date_button.click()
+        time.sleep(1)
+        for i in range(0,int(click_count)):
+            driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
+            time.sleep(1)
+        
+        driver.find_element_by_xpath(f'//a[contains(@href,"#") and text()={input_day}]').click()
+        time.sleep(1)
+        logger.info(f"{count}/{edit_date_buttons_num}完了")
+        eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
 
 
 def edit_date(input_month,input_day):
@@ -80,48 +94,21 @@ def edit_date(input_month,input_day):
         # 日付変更動作
         logger.info('日付変更処理が開始されました')
         eel.view_log_js('日付変更処理が開始されました')
-        edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
-        edit_date_buttons_num = len(edit_date_buttons)
-
-        for count,edit_date_button in enumerate(edit_date_buttons,1):
-            edit_date_button.click()
-            time.sleep(1)
-            for i in range(0,int(click_count)):
-                driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
-                time.sleep(1)
-            
-            driver.find_element_by_xpath(f'//a[contains(@href,"#") and text()={input_day}]').click()
-            time.sleep(1)
-            logger.info(f"{count}/{edit_date_buttons_num}完了")
-            eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
+        operate_calendar(click_count,input_day)
 
         while len(driver.find_elements_by_xpath('//a[@rel="next" and text()="次へ"]')) > 0:
             driver.find_element_by_xpath('//a[@rel="next" and text()="次へ"]').click()
             logger.info('次のページに遷移しました')
             eel.view_log_js("次のページに遷移しました")
-
-            edit_date_buttons = driver.find_elements_by_class_name('_item_edit_yukodate')
-            edit_date_buttons_num = len(edit_date_buttons)
-
-            for count,edit_date_button in enumerate(edit_date_buttons,1):
-                edit_date_button.click()
-                for i in range(0,int(click_count)):
-                    driver.find_element_by_xpath('//*[@id="ui-datepicker-div"]/div/a[2]/span').click()
-                    time.sleep(1)
-                
-                driver.find_element_by_xpath(f'//a[text()={input_day}]').click()
-                time.sleep(1)
-
-                logger.info(f"{count}/{edit_date_buttons_num}完了")
-                eel.view_log_js(f"{count}/{edit_date_buttons_num}完了")
-
+            operate_calendar(click_count,input_day)
+           
         logger.info('処理が完了しました')
         eel.view_log_js("処理が完了しました")
         driver.quit()
     except Exception as e:
         logger.info(e)
         eel.view_log_js('エラーが発生しました')
-        # driver.quit()
+        driver.quit()
 
 
 
